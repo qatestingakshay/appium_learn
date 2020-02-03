@@ -29,7 +29,7 @@ public class Base {
 	public void setup() throws MalformedURLException, InterruptedException{
 		 // String value = "mobile";
 		  String value = "browser";
-		 
+		 //github repo code
 
 		if (value.equalsIgnoreCase("mobile")) {
 			DesiredCapabilities Cap = new DesiredCapabilities();
