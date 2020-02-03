@@ -29,6 +29,7 @@ public class Base {
 	public void setup() throws MalformedURLException, InterruptedException{
 		 // String value = "mobile";
 		  String value = "browser";
+		  //add git git code in to repo 
 
 		if (value.equalsIgnoreCase("mobile")) {
 			DesiredCapabilities Cap = new DesiredCapabilities();
