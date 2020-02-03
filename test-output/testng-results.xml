@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13144" started-at="2020-01-30T03:14:24Z" finished-at="2020-01-30T03:14:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13144" started-at="2020-01-30T03:14:24Z" finished-at="2020-01-30T03:14:37Z">
+      <class name="com.Apptest.BrowserTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Apptest.BrowserTest@77caeb3e]" name="setup" is-config="true" duration-ms="7070" started-at="2020-01-29T22:14:24Z" finished-at="2020-01-29T22:14:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="QAtest()[pri:0, instance:com.Apptest.BrowserTest@77caeb3e]" name="QAtest" duration-ms="3756" started-at="2020-01-29T22:14:31Z" finished-at="2020-01-29T22:14:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QAtest -->
+        <test-method status="PASS" signature="afterethod()[pri:0, instance:com.Apptest.BrowserTest@77caeb3e]" name="afterethod" is-config="true" duration-ms="2287" started-at="2020-01-29T22:14:35Z" finished-at="2020-01-29T22:14:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterethod -->
+      </class> <!-- com.Apptest.BrowserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
