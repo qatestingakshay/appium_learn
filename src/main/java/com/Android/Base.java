@@ -1,9 +1,9 @@
 package com.Android;
 
-import java.net.MalformedURLException;
+import java.net.MalformedURLException; 
 import java.net.URL;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,25 +11,29 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Base {
 	public static AndroidDriver<AndroidElement> driver;
-	
+
 	public static WebDriver getdriver ;
-	
+
 	public static String UserEmail = "swautomation.testing@sherwin.com";
 	public static String Password = "test123";
-	
+
+	public static Property configProps=new Property("config.properties");
+	public static String url = configProps.getProperty("productioURL");
 	//String UserEmail = null;
-	
+
 	@BeforeMethod
 	public void setup() throws MalformedURLException, InterruptedException{
-		 // String value = "mobile";
-		  String value = "browser";
-		 //github repo code
+		// String value = "mobile";
+		String value = "browser";
+		//github repo code
 
 		if (value.equalsIgnoreCase("mobile")) {
 			DesiredCapabilities Cap = new DesiredCapabilities();
@@ -53,33 +57,27 @@ public class Base {
 			Thread.sleep(10000);
 			driver.findElement(By.xpath("//android.widget.Button[@text='SIGN IN']")).click();
 		}else if (value.equalsIgnoreCase("browser")) {
-			
-			
+
 			System.out.println(System.getProperty("user.dir"));
-			
-			
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
-			//System.setProperty("webdriver.chrome.driver", "C:/dev/appium/Appium_automation/src/main/resources/chromedriver.exe");
-			 
-			//System.setProperty("webdriver.chrome.driver",System.getProperty("C:/dev/appium/Appium_automation/src/main/resources/chromedriver.exe"));
-		getdriver = new ChromeDriver();
-		getdriver.get("https://www.sherwin-williams.com/");
-		
-		
-		
-		
-		
+			getdriver = new ChromeDriver();
+			getdriver.get(url);
+
+
+
+
+
 		}
 
 	}
 	@AfterMethod
 	public void afterethod() {
-		
+
 		getdriver.close();	
 		getdriver.quit();
-		
+
 	}
-	
-	
+
+
 
 }

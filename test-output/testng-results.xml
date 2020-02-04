@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21512" started-at="2020-02-04T02:25:17Z" finished-at="2020-02-04T02:25:38Z">
+  <suite name="Default suite" duration-ms="64138" started-at="2020-02-04T03:04:00Z" finished-at="2020-02-04T03:05:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21512" started-at="2020-02-04T02:25:17Z" finished-at="2020-02-04T02:25:38Z">
+    <test name="Default test" duration-ms="64138" started-at="2020-02-04T03:04:00Z" finished-at="2020-02-04T03:05:04Z">
       <class name="com.Apptest.BrowserTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.Apptest.BrowserTest@4501b7af]" name="setup" is-config="true" duration-ms="10079" started-at="2020-02-04T07:55:17Z" finished-at="2020-02-04T07:55:27Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.Apptest.BrowserTest@4501b7af]" name="setup" is-config="true" duration-ms="38204" started-at="2020-02-04T08:34:00Z" finished-at="2020-02-04T08:34:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="QAtest()[pri:0, instance:com.Apptest.BrowserTest@4501b7af]" name="QAtest" duration-ms="8773" started-at="2020-02-04T07:55:27Z" finished-at="2020-02-04T07:55:36Z">
+        <test-method status="FAIL" signature="QAtest()[pri:0, instance:com.Apptest.BrowserTest@4501b7af]" name="QAtest" duration-ms="23102" started-at="2020-02-04T08:34:38Z" finished-at="2020-02-04T08:35:02Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@sw-focus-route='scene-dot-3']"}
@@ -20,8 +20,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'AMMY-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_71'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\AMMY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53708}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fe898a6c7361c6b58c5582ac71b9ae67
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\AMMY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55205}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e4219f57e907b5749be5c024e6fbc22f
 *** Element info: {Using=xpath, value=//*[@sw-focus-route='scene-dot-3']}]]>
             </message>
             <full-stacktrace>
@@ -31,8 +31,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'AMMY-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_71'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\AMMY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53708}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fe898a6c7361c6b58c5582ac71b9ae67
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\AMMY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55205}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e4219f57e907b5749be5c024e6fbc22f
 *** Element info: {Using=xpath, value=//*[@sw-focus-route='scene-dot-3']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -80,7 +80,7 @@ Session ID: fe898a6c7361c6b58c5582ac71b9ae67
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QAtest -->
-        <test-method status="PASS" signature="afterethod()[pri:0, instance:com.Apptest.BrowserTest@4501b7af]" name="afterethod" is-config="true" duration-ms="2635" started-at="2020-02-04T07:55:36Z" finished-at="2020-02-04T07:55:38Z">
+        <test-method status="PASS" signature="afterethod()[pri:0, instance:com.Apptest.BrowserTest@4501b7af]" name="afterethod" is-config="true" duration-ms="2646" started-at="2020-02-04T08:35:02Z" finished-at="2020-02-04T08:35:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterethod -->
