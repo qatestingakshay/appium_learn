@@ -55,11 +55,15 @@ public class Base {
 		}else if (value.equalsIgnoreCase("browser")) {
 			
 			
-			System.setProperty("webdriver.chrome.driver", "C:/dev/appium/Appium_automation/src/main/resources/chromedriver.exe");
+			System.out.println(System.getProperty("user.dir"));
+			
+			
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "C:/dev/appium/Appium_automation/src/main/resources/chromedriver.exe");
 			 
 			//System.setProperty("webdriver.chrome.driver",System.getProperty("C:/dev/appium/Appium_automation/src/main/resources/chromedriver.exe"));
 		getdriver = new ChromeDriver();
-		getdriver.get("https://qa-www.sherwin-williams.com/");
+		getdriver.get("https://www.sherwin-williams.com/");
 		
 		
 		
@@ -72,6 +76,7 @@ public class Base {
 	public void afterethod() {
 		
 		getdriver.close();	
+		getdriver.quit();
 		
 	}
 	
