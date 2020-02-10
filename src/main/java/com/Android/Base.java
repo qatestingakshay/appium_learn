@@ -27,15 +27,15 @@ public class Base {
 
 	public static Property configProps=new Property("config.properties");
 	public static String url = configProps.getProperty("productioURL");
+	public static String browser = configProps.getProperty("browser");
+	
 	//String UserEmail = null;
 
-	@BeforeMethod
+	//@BeforeMethod
 	public void setup() throws MalformedURLException, InterruptedException{
-		// String value = "mobile";
-		String value = "browser";
-		//github repo code
+		 
 
-		if (value.equalsIgnoreCase("mobile")) {
+		if (browser.equalsIgnoreCase("mobile")) {
 			DesiredCapabilities Cap = new DesiredCapabilities();
 			Cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy S10e");
 			//Cap.setCapability("appPackage", "com.sherwin.probuyplus.debug");
@@ -56,21 +56,17 @@ public class Base {
 			driver.findElement(By.xpath("//*[@text='Password']")).sendKeys(Password);
 			Thread.sleep(10000);
 			driver.findElement(By.xpath("//android.widget.Button[@text='SIGN IN']")).click();
-		}else if (value.equalsIgnoreCase("browser")) {
+		}else if (browser.equalsIgnoreCase("chrome")) {
 
 			System.out.println(System.getProperty("user.dir"));
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
 			getdriver = new ChromeDriver();
 			getdriver.get(url);
 
-
-
-
-
 		}
 
 	}
-	@AfterMethod
+	//@AfterMethod
 	public void afterethod() {
 
 		getdriver.close();	
