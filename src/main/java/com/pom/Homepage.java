@@ -12,6 +12,8 @@ public class Homepage extends Base{
  @FindBy(xpath="(//a[@id='storeLocatorQuickLink'])[1]")
  WebElement storelink;
  
+
+ 
  public Homepage(){
 	 PageFactory.initElements(getdriver, this);
  }

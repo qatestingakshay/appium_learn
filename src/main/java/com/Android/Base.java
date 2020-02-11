@@ -62,7 +62,15 @@ public class Base {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
 			getdriver = new ChromeDriver();
 			getdriver.get(url);
+			getdriver.manage().window().maximize();
+			
 
+		}else if (browser.equalsIgnoreCase("firefox")) {
+
+			System.out.println(System.getProperty("user.dir"));
+			System.setProperty("webdriver.geoko.driver",System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
+			getdriver = new ChromeDriver();
+			getdriver.get(url);
 		}
 
 	}

@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16259" started-at="2020-02-10T03:22:51Z" finished-at="2020-02-10T03:23:07Z">
+  <suite name="Default suite" duration-ms="35360" started-at="2020-02-11T02:52:57Z" finished-at="2020-02-11T02:53:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16259" started-at="2020-02-10T03:22:51Z" finished-at="2020-02-10T03:23:07Z">
-      <class name="com.Apptest.StoreLinkTest">
-        <test-method status="PASS" signature="initailsetup()[pri:0, instance:com.Apptest.StoreLinkTest@d8355a8]" name="initailsetup" is-config="true" duration-ms="8543" started-at="2020-02-10T08:52:51Z" finished-at="2020-02-10T08:52:59Z">
+    <test name="Default test" duration-ms="35360" started-at="2020-02-11T02:52:57Z" finished-at="2020-02-11T02:53:33Z">
+      <class name="com.Apptest.SuppliersTest">
+        <test-method status="PASS" signature="insetup()[pri:0, instance:com.Apptest.SuppliersTest@47c62251]" name="insetup" is-config="true" duration-ms="10801" started-at="2020-02-10T21:52:57Z" finished-at="2020-02-10T21:53:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initailsetup -->
-        <test-method status="PASS" signature="storelinktest()[pri:0, instance:com.Apptest.StoreLinkTest@d8355a8]" name="storelinktest" duration-ms="7036" started-at="2020-02-10T08:52:59Z" finished-at="2020-02-10T08:53:06Z">
+        </test-method> <!-- insetup -->
+        <test-method status="PASS" signature="auppliersurlTest()[pri:0, instance:com.Apptest.SuppliersTest@47c62251]" name="auppliersurlTest" duration-ms="30" started-at="2020-02-10T21:53:08Z" finished-at="2020-02-10T21:53:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- storelinktest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.Apptest.StoreLinkTest@d8355a8]" name="teardown" is-config="true" duration-ms="641" started-at="2020-02-10T08:53:06Z" finished-at="2020-02-10T08:53:07Z">
+        </test-method> <!-- auppliersurlTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.Apptest.SuppliersTest@47c62251]" name="teardown" is-config="true" duration-ms="915" started-at="2020-02-10T21:53:08Z" finished-at="2020-02-10T21:53:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.Apptest.StoreLinkTest -->
+        <test-method status="PASS" signature="insetup()[pri:0, instance:com.Apptest.SuppliersTest@47c62251]" name="insetup" is-config="true" duration-ms="8391" started-at="2020-02-10T21:53:09Z" finished-at="2020-02-10T21:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insetup -->
+        <test-method status="PASS" signature="suppliersTest()[pri:0, instance:com.Apptest.SuppliersTest@47c62251]" name="suppliersTest" duration-ms="5002" started-at="2020-02-10T21:53:17Z" finished-at="2020-02-10T21:53:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suppliersTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.Apptest.SuppliersTest@47c62251]" name="teardown" is-config="true" duration-ms="917" started-at="2020-02-10T21:53:22Z" finished-at="2020-02-10T21:53:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="insetup()[pri:0, instance:com.Apptest.SuppliersTest@47c62251]" name="insetup" is-config="true" duration-ms="8282" started-at="2020-02-10T21:53:23Z" finished-at="2020-02-10T21:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insetup -->
+        <test-method status="PASS" signature="suppliersUrlTittle()[pri:0, instance:com.Apptest.SuppliersTest@47c62251]" name="suppliersUrlTittle" duration-ms="56" started-at="2020-02-10T21:53:32Z" finished-at="2020-02-10T21:53:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suppliersUrlTittle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.Apptest.SuppliersTest@47c62251]" name="teardown" is-config="true" duration-ms="929" started-at="2020-02-10T21:53:32Z" finished-at="2020-02-10T21:53:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.Apptest.SuppliersTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
