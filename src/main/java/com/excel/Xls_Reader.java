@@ -1,9 +1,6 @@
 package com.excel;
 
-
-
-
-import java.io.FileInputStream;
+import java.io.FileInputStream; 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Calendar;
@@ -23,7 +20,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class Utilites {
+public class Xls_Reader {
 
 	public String path;
 	public FileInputStream fis = null;
