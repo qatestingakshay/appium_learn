@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.Android.Action;
 import com.Android.Base;
 
-public class AppTest extends Action {
+public class AppTest extends BrowserTest {
 	
 @Test
 	public void loginApplication() {

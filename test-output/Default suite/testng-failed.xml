@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.Apptest.BrowserTest">
+      <class name="com.Apptest.ColorHeaderTest">
         <methods>
-          <include name="QAtest"/>
-          <include name="setup"/>
-          <include name="afterethod"/>
+          <include name="close"/>
+          <include name="Browsersetup"/>
+          <include name="Colorheader"/>
         </methods>
-      </class> <!-- com.Apptest.BrowserTest -->
+      </class> <!-- com.Apptest.ColorHeaderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

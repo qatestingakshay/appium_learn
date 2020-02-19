@@ -9,7 +9,8 @@ import com.Android.Base;
 
 public class SuppliersPage extends Base {
 
-	 
+	
+	
 	@FindBy(xpath="//*[@id='storeLocatorQuickLink']")
 	WebElement supplieslink;
 	

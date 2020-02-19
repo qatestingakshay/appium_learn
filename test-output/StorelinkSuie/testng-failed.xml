@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [StorelinkSuie]">
+  <test name="Storelink(failed)" parallel="methods">
+    <classes>
+      <class name="com.Apptest.StoreLinkTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="storelinktest1"/>
+          <include name="storelinktest2"/>
+          <include name="initailsetup"/>
+        </methods>
+      </class> <!-- com.Apptest.StoreLinkTest -->
+    </classes>
+  </test> <!-- Storelink(failed) -->
+</suite> <!-- Failed suite [StorelinkSuie] -->

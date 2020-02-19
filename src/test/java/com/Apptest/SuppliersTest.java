@@ -31,9 +31,9 @@ public class SuppliersTest extends Base {
 	public void auppliersurlTest() throws InterruptedException {
 		String supplerspageurl = supplierspage.verifysuppliesurl();
 		if(supplerspageurl.equals("https://www.sherwin-williams.com/")){
-			System.out.println(supplerspageurl+"Page URL match Passssssss");
+			System.out.println(supplerspageurl+"Page URL match Pass");
 		}else {
-			System.out.println(supplerspageurl+"Page URL not match Faillllllllll");
+			System.out.println(supplerspageurl+"Page URL not match Fail");
 		}
 	}
 	//@Test(priority=3)
@@ -42,10 +42,10 @@ public class SuppliersTest extends Base {
 
 		String supplerspagetitle= supplierspage.verifysupplieslink();
 		if(supplerspagetitle.equals("Sherwin-Williams Paints, Stains, Supplies and Coating SolutionsPage")){
-			System.out.println(supplerspagetitle+"Page Tittle match Passssssss");
+			System.out.println(supplerspagetitle+"Page Tittle match Pass");
 			supplierspage.supplieslinkclick();
 		}else {
-			System.out.println(supplerspagetitle+"Page Tittle not match Faillllllllll");
+			System.out.println(supplerspagetitle+"Page Tittle not match Fail");
 		}	
 
 	}
