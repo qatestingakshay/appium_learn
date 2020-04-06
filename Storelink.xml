@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="StorelinkSuie">
-  <test thread-count="2" name="Storelink" parallel="methods">
-    <classes>
-      <class name="com.Apptest.StoreLinkTest"/>
-    </classes>
-  </test> <!-- Storelink -->
+	<test thread-count="2" name="Storelink" parallel="methods">
+		<classes>
+			<class name="com.andriod.sa.Testlogin">
+				<methods>
+					<include name="salogintest" />
+					<include name="secondmethod" />
+					<exclude name="nextwindow" />
+				</methods>
+			</class>
+			<class name="com.Android.EnvironmentChange">
+				<method>
+					<include name="Environmentchange" />
+				</method>
+			</class>
+		</classes>
+	</test> <!-- Storelink -->
 </suite> <!-- StorelinkSuie -->
